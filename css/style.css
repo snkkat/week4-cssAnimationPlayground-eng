@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    margin: 2rem auto;
+}
+
+.container > div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    top: -300px;
+    animation: red 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes red {
+    100% {top: 0;}
+}
+
+#yellow {
+    background-color: yellow;
+    animation: yellow 5s ease-in-out forwards;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yellow {
+    100% {opacity: 1;}
+}
+
+#green {
+    background-color: green;
+    animation: green 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    transform: rotatex(180deg);
+}
+
+@keyframes green {
+    50% {transform: rotate(180deg);}    
+}
